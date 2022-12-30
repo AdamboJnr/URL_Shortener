@@ -7,6 +7,8 @@ const { default: mongoose } = require('mongoose')
 require('dotenv').config()
 
 app.use(express.json())
+app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended: true }))
 
 // Routes
 app.use('/', shortUrl)
