@@ -7,7 +7,7 @@ const getAllShortUlrs = asyncWrapper( async (req, res, next) => {
 
     res.render('index', { urls: urls })
 
-    // res.status(200).json({ urls }) JSON Format
+    // res.status(200).json({ urls }) JSON 
 })
 
 const shortenUrl = asyncWrapper( async (req, res, next) => {
@@ -15,7 +15,7 @@ const shortenUrl = asyncWrapper( async (req, res, next) => {
 
     res.redirect('/')
 
-    // res.status(200).json({ url }) JSON format
+    // res.status(200).json({ url }) JSON 
 })
 
 const shortLinks = asyncWrapper( async (req,res, next) => {
